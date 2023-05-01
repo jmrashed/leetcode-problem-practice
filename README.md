@@ -40,4 +40,4 @@ cd go-leetcode-problem-practice
 
 
 # Acknowledgments 
-This repository was created by [jmrashed]((https://github.com/jmrashed)). You can find my LeetCode profile [here](https://leetcode.com/rasheduzzaman) and my LinkedIn profile [here](https://www.linkedin.com/in/md-rasheduzzaman).
+This repository was created by [jmrashed](https://github.com/jmrashed). You can find my LeetCode profile [here](https://leetcode.com/rasheduzzaman) and my LinkedIn profile [here](https://www.linkedin.com/in/md-rasheduzzaman).
