@@ -39,5 +39,5 @@ cd go-leetcode-problem-practice
 - Learn from other people's solutions and try to improve your own coding skills.
 
 
-# Acknowledgments
-This repository was created by  [https://github.com/jmrashed](https://github.com/jmrashed)
+# Acknowledgments 
+This repository was created by [jmrashed]((https://github.com/jmrashed)). You can find my LeetCode profile [here](https://leetcode.com/rasheduzzaman) and my LinkedIn profile [here](https://www.linkedin.com/in/md-rasheduzzaman).
