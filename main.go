@@ -1,13 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"net/http"
+)
+
+func welcomePage(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "You requested: %s \n", r.URL.Path)
+
+	switch r.URL.Path {
+	case "/":
+		fmt.Fprint(w, "Home page")
+	case "/about":
+		fmt.Fprint(w, "About Us")
+	case "/login":
+		fmt.Fprint(w, "Login")
+	}
+}
 
 func main() {
-	sum := 0
-	for i := 1; i < 1_0; i++ {
-		if i%3 == 0 || i%5 == 0 {
-			sum += i
-		}
-	}
-	fmt.Printf("Sum: %d\n", sum)
+	http.HandleFunc("/", welcomePage)
+	http.ListenAndServe("", nil)
+
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }

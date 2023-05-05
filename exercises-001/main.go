@@ -1,13 +1,37 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
-func main() {
-	var nums []int
-	for i := 2000; i <= 3200; i++ {
+func findSevenDivisor(starting int, ending int) string {
+	var numbers []string
+
+	for i := starting; i <= ending; i++ {
 		if i%7 == 0 && i%5 != 0 {
-			nums = append(nums, i)
+			numbers = append(numbers, strconv.Itoa(i))
 		}
 	}
-	fmt.Println(nums)
+	return strings.Join(numbers, ",")
+}
+func testFunc() {
+	want := "112,119,126,133,147,154,161,168,182,189,196"
+	got := findSevenDivisor(100, 200)
+
+	if got != want {
+		fmt.Println("Not matching...")
+	} else {
+		fmt.Println("Matching Successfully")
+	}
+}
+func main() {
+	var starting int = 100
+	var ending int = 200
+	res := findSevenDivisor(starting, ending)
+	fmt.Println(res)
+
+	// testFunc()
+
 }
