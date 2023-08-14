@@ -13,7 +13,7 @@ Make sure you have Go installed on your machine. If not, you can download and in
 2. Open a terminal and navigate to the project directory:
 
 ```sh
-cd merge-sorted-array
+cd go-leetcode-problem-practice/merge-sorted-array
 ```
 
 3. Run the Go program using the following command:
